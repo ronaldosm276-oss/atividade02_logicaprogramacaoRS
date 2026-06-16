@@ -1,14 +1,38 @@
+const formDados = document.querySelector('#formulario')
 const Results = document.querySelector('#result')
-
-let numeros = ''
-
-cont = 0
+const botão = document.querySelector('#btn-resultado')
+const numeros = document.querySelector('#numDivisores')
 
 
-for (i = 1; i <= 1000; i++){
-  if (i % 7 == 0)
-   cont++
-}
+botão.addEventListener('click', (evt) => {
+    var listanum = ''
+    evt.preventDefault()
+
+    const form_num = new FormData(formDados)
 
 
-Results.innerHTML = `<br> Os divisores desse número são:`
+    let number = parseFloat(form_num.get('numDivisores'))
+
+    for (i = 1; i <= number; i++){
+        let resultado = number % i
+
+        console.log(resultado)
+        
+
+        if (resultado == 0){
+            listanum += i + ', '
+        }
+       
+    }
+    Results.innerHTML = `${listanum.slice(0,-2)}.`
+   
+
+})
+
+
+
+
+
+
+
+

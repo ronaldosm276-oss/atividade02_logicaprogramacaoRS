@@ -8,7 +8,7 @@
 
 
 
-/*Estruturas de repetições
+Estruturas de repetições
 // For, loop, arrays, etc
 // Códigos que se repetem até completarem sua tarefa
 
