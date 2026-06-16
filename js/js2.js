@@ -6,9 +6,9 @@ cont = 0
 
 
 for (i = 1; i <= 1000; i++){
-    if (i % 7 == 0)
-    cont++
+  if (i % 7 == 0)
+   cont++
 }
 
 
-Results.innerHTML = `numeros divisiveis = ${cont}`
+Results.innerHTML = `<br> Os divisores desse número são:`

@@ -11,4 +11,4 @@ for (i = 1; i <= 1000; i++){
 }
 
 
-Results.innerHTML = `numeros divisiveis = ${cont}`
+Results.innerHTML = `números divisiveis = ${cont}`
