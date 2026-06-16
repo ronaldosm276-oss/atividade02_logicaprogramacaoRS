@@ -1,0 +1,43 @@
+<div id="geral">
+        <h1>Estrutura for</h1>
+        <div id="div-for"></div>
+
+
+        <h1>Contador e Acumulador</h1>
+        <input type="number" name="num1" id="num1">
+        
+        <button id="btn-num1">Adicionar num1</button>
+        
+        <div id="result-cont-acum"></div>
+       
+
+        <h1>Repetição com While</h1><br>
+        
+
+        <label for="msg">Digite uma frase</label>
+        <input type="text" name="msg" id="msg"><br><br>
+
+        <label for="numRepeticao">Digite a qntd para repetição de frase</label>
+        <input type="text" name="numRepeticao" id="numRepeticao"><br><br>
+        
+        <button id="btn-exibir">Exibir frase</button>
+        
+        <div id="result-frase"></div>
+
+        <H1>FOR IN</H1>
+
+        <div id="div-forin">
+
+        </div>
+
+        <h1>FOR OF</h1>
+
+        <div id="div-forof">
+
+        </div>
+        <h1>For each</h1>
+        <div id="div-foreach">
+
+        </div>
+
+    </div>
