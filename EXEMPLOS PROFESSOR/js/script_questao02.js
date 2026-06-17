@@ -12,7 +12,7 @@ btnNum.addEventListener('click', (evt) => {
         }
     }
 
-
+//This is question 2. Very simple as well, but introduces new elements, it's worth taking a look at html, and tags and stuff. it adds an event listerner, it being just so that it will execute the code after 
 })
 
 

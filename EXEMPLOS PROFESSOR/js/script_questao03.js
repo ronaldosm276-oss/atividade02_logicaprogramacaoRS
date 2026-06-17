@@ -4,6 +4,9 @@ const inputPeso = document.querySelector('#peso')
 const btnVerifica = document.querySelector('#btn-verifica')
 const divResultado = document.querySelector('#div-resultado')
 
+//está pegando elementos do document object model e transformando em const
+
+
 let cont12 = 0
 let contPode = 0
 let contNaoPode = 0
