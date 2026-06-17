@@ -13,43 +13,54 @@ let contMenor = 0
 let contAdulto = 0
 let contFem = 0
 let contMasc = 0
+let contIdoso = 0
+let pessoas = ''
+let sexo = ''
 
 
 btnVerifica.addEventListener('click', (evt) => {
-    let idade = Number(inpuIdade.value)
-    let nome = Number(inputNome.value)
+    let idade = Number(inputIdade.value)
+    //pega idade se for número, ou convert em número?
+    let nome = inputNome.value
 
-    if (idade >= 18 && idade <= 65){
+    //evt faz o que?
+
+    if (idade >= 18 && idade < 65) {
         contAdulto++
-    } 
-    else{
-        (idade < 18)
+    }
+    else if (idade < 18) {
         contMenor++
     }
-    if  (){
-       
+    else if (idade >= 65) {
+        contIdoso++
     }
-    if {
-        //insertcodethatchecknextthinghere ++
+    if (masc.checked) {
+        contMasc++
+        sexo = 'masculino'
     }
-    if {
-        //insertcodethatchecknextthinghere ++
-    }
-    if {
-        //insertcodethatchecknextthinghere ++
+    else {
+        contFem++
+        sexo = 'feminino'
     }
 
     cont20++
+    pessoas += `${nome}: ${idade}, ${sexo} <br>`
 
-    if (cont20 == 1) {
-        inpuIdade.setAttribute('disabled', 'disabled')
+    //como eu puxo o sexo da pessoa??
+
+    if (cont20 == 2) {
+        //não vou colocar 20 dados, preguiça
+        inputIdade.setAttribute('disabled', 'disabled')
         inputNome.setAttribute('disabled', 'disabled')
         masc.setAttribute('disabled', 'disabled')
         fem.setAttribute('disabled', 'disabled')
+        //essa parte desabilita de colocar mais dados, greys out the options when it finishes
 
-        divResultado.innerHTML = `TOTAL DE PESSOA QUE PODEM DOAR ${contPode} <br> TOTAL DE PESSOA QUE NÃO PODEM DOAR ${contNaoPode} `
+        divResultado.innerHTML = `${pessoas} <br> <br> <br> Menores = ${contMenor}
+        Adultos = ${contAdulto}, Idosos = ${contIdoso} 
+        Sexo: Masculino = ${contMasc}, Feminino = ${contFem}`
     }
 
-    inpuIdade.value = ''
-    inputPeso.value = ''
+    inputIdade.value = ''
+    inputNome.value = ''
 })

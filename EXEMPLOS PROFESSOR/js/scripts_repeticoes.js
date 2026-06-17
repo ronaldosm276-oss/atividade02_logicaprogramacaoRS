@@ -1,14 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-Estruturas de repetições
+//Estruturas de repetições
 // For, loop, arrays, etc
 // Códigos que se repetem até completarem sua tarefa
 
@@ -152,4 +142,4 @@ const divForEach = document.querySelector('#div-foreach')
 pessoas.forEach((elem, i)=>{
     divForEach.innerHTML += `${i} - ${elem.nome}, ${elem.idade} anos com renda R$ ${elem.renda.toFixed(2).replace('.',',')} <br>`
 })
-*/
+
