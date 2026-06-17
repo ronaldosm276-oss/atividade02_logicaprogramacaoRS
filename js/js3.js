@@ -5,14 +5,10 @@ const numeros = document.querySelector('#numDivisores')
 
 
 botão.addEventListener('click', (evt) => {
-    //O código só vai funcionar depois de clicar no botão, lendo o 'evento'
     var listanum = ''
-    //criado variavel string vazia
     evt.preventDefault()
-    //??
 
     const form_num = new FormData(formDados)
-    
 
 
     let number = parseFloat(form_num.get('numDivisores'))
